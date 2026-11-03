@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#1747c9">
+<title>HIMST - How Is My Situation Today?</title>
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<div class="langs" id="langs"></div>
+<div class="hero"><img alt="HIMST" src="logo.webp"><div><h1 class="brand">HIMS<b>T</b></h1><p>How Is My Situation Today?</p></div><div class="streak" id="streak" hidden></div></div>
+<p class="sub" id="sub"></p>
+<p class="hello" id="hello"></p>
+<p class="fun" id="fun"></p>
+<div class="card" id="prof"><h2 id="aboutH"></h2>
+ <div class="fl"><label id="ageL" for="age"></label><input type="number" id="age" min="5" max="110" inputmode="numeric"></div>
+ <div class="fl" id="gens"></div>
+ <label class="fl" id="parentRow" hidden><input type="checkbox" id="parent"><span id="parentL"></span></label>
+ <button class="btn" id="save"></button></div>
+<div class="fl" id="sum" hidden></div>
+<div class="tiles" id="tiles"></div>
+<button class="cta" id="cta"></button>
+<div class="card res" id="res" hidden aria-live="polite"><div class="kind" id="kind"></div><p class="txt" id="txt"></p>
+ <div class="q" id="qbox" hidden><span id="qt"></span><div class="fl" id="opts"></div></div>
+ <div class="row"><button class="btn" id="more"></button><button class="btn alt" id="voice">🔊</button><button class="btn alt" id="share"></button></div>
+ <p class="msg" id="msg"></p></div>
+<div class="card" id="freeCard"><h2 id="freeH"></h2><textarea id="free" rows="3" maxlength="500"></textarea><button class="btn" id="send"></button></div>
+<p class="note" id="note"></p>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
