@@ -1,1 +1,1 @@
-{ "name": "himst", "version": "0.1.0", "private": true, "description": "HIMST - How Is My Situation Today? Funny, encouraging AI check-in app.", "engines": { "node": ">=18" } }
+{ "name": "himst", "version": "0.1.0", "private": true, "description": "HIMST - How Is My Situation Today? Funny, encouraging AI check-in app.", "scripts": { "start": "node server.js" }, "engines": { "node": ">=18" } }

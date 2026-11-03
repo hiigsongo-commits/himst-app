@@ -6,6 +6,7 @@ App qosol iyo dhiirrigelin ah oo AI isticmaala. Waa **PWA** (waa la rakibi karaa
 ## Qaab-dhismeedka
 ```
 public/          # frontend (index.html, app.js, style.css, PWA manifest, icons)
+server.js        # server-ka Render (Node)
 api/generate.js  # server function: furaha Claude API halkan ayuu ku jiraa, ma ahan browser-ka
 .env.example     # tusaale doorsoomayaal
 ```
@@ -20,6 +21,11 @@ api/generate.js  # server function: furaha Claude API halkan ayuu ku jiraa, ma a
 4. *Redeploy*. Fur linkiga telefoonkaaga → **Add to Home Screen**.
 
 **Ha geliyo furaha `.env` GitHub.** `.gitignore` ayaa ka ilaaliya.
+
+### Render (haddii aad Vercel ka isticmaali weydo)
+- Build Command: `npm install`  |  Start Command: `node server.js`  (ha ku qorin "$")
+- Environment Variables: `ANTHROPIC_API_KEY`, `MODEL=claude-haiku-5-5`, `DAILY_LIMIT=60`
+- `server.js` wuxuu bixiyaa `public/` iyo `/api/generate`.
 
 ### Haddii aad GitHub Pages oo keliya isticmaasho
 Pages ma haysto server, sidaas darteed AI ma shaqeyso. App-ku wuxuu u beddelmayaa **habka offline** (12 farriimood oo diyaarsan: English iyo Soomaali). Waa wanaagsan tijaabada naqshadda, ma aha tijaabada AI.
